@@ -5,28 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>War Game</title>
+    <title>JS WAR GAME</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <section class="comp">
-        <div class="computer-deck deck">26</div>
-        <div class="computer-card-slot card-slot"></div>
+    <section class="title-button">
+        <h1>War Game</h1>
+        <button class="draw-button">Draw</button>
     </section>
-    <section class="game-info">
-        <div class="text">Player Wins!</div>
-        <button class="draw-button">DRAW</button>
+    <section class="game-area">
+        <div class="player1-area">
+            <p id="player1-name"></p>
+            <section class="visible-cards">
+                <div class="player1-hand hand">
+                    <img src="./cardback.jpg" alt="">
+                </div>
+                <div class="player1-card-slot card-slot"></div>
+            </section>
+            <div class="player1-deck deck"></div>
+        </div>
+        <div class="player2-area">
+            <p id="player2-name"></p>
+            <section class="visible-cards">
+                <div class="player2-hand hand">
+                    <img src="./cardback.jpg" alt="">
+                </div>
+                <div class="player2-card-slot card-slot"></div>
+            </section>
+            <div class="player2-deck deck"></div>
+        </div>
     </section>
-    <section class="player">
-        <div class="player-deck deck">26</div>
-        <div class="player-card-slot card-slot"></div>
-    </section>
+    <div class="text"></div>
 
 
 
-
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
